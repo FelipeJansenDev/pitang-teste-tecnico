@@ -10,7 +10,7 @@ public class Carro {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequenceGenerator")
     @SequenceGenerator(name = "sequenceGenerator")
-    private int id;
+    private Long id;
 
     @Column
     private String color;
@@ -21,11 +21,11 @@ public class Carro {
     @Column
     private String model;
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
