@@ -1,8 +1,6 @@
 package com.pitang.testeTecnico.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.util.Date;
 
@@ -10,6 +8,8 @@ import java.util.Date;
 public class Carro {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequenceGenerator")
+    @SequenceGenerator(name = "sequenceGenerator")
     private int id;
 
     @Column
