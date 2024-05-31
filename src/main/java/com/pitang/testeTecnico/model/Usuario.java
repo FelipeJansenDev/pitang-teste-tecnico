@@ -1,27 +1,42 @@
 package com.pitang.testeTecnico.model;
 
+import jakarta.persistence.*;
+
 import java.util.Date;
-import java.util.List;
 
+@Entity
 public class Usuario {
-    private String firstName;
-    private String lastName;
-    private String email;
-    private Date birthday;
-    private String login;
-    private String password;
-    private String phone;
-    private List<Carro> cars;
 
-    public Usuario(String firstName, String lastName, String email, Date birthday, String login, String password, String phone, List<Carro> cars) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.birthday = birthday;
-        this.login = login;
-        this.password = password;
-        this.phone = phone;
-        this.cars = cars;
+    @Id
+    private int id;
+
+    @Column
+    private String firstName;
+
+    @Column
+    private String lastName;
+
+    @Column
+    private String email;
+
+    @Column
+    private Date birthday;
+
+    @Column
+    private String login;
+
+    @Column
+    private String password;
+
+    @Column
+    private String phone;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getFirstName() {
@@ -80,11 +95,4 @@ public class Usuario {
         this.phone = phone;
     }
 
-    public List<Carro> getCars() {
-        return cars;
-    }
-
-    public void setCars(List<Carro> cars) {
-        this.cars = cars;
-    }
 }
