@@ -1,36 +1,17 @@
-package com.pitang.testeTecnico.model;
+package com.pitang.testeTecnico.model.dto;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
 
 import java.util.Date;
 
-@Entity
-public class Usuario {
+public class UsuarioDTO {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequenceGenerator")
-    @SequenceGenerator(name = "sequenceGenerator")
     private Long id;
-
-    @Column
     private String firstName;
-
-    @Column
     private String lastName;
-
-    @Column(unique = true)
-    private String email;
-
-    @Column
     private Date birthday;
-
-    @Column(unique = true)
     private String login;
-
-    @Column
     private String password;
-
-    @Column
     private String phone;
 
     public Long getId() {
@@ -55,14 +36,6 @@ public class Usuario {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public Date getBirthday() {
@@ -96,5 +69,4 @@ public class Usuario {
     public void setPhone(String phone) {
         this.phone = phone;
     }
-
 }
