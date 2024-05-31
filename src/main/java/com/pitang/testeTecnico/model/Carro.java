@@ -1,34 +1,40 @@
 package com.pitang.testeTecnico.model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+import java.util.Date;
+
+@Entity
 public class Carro {
-    private String name;
-    private int year;
-    private String licensePlate;
-    private String model;
+
+    @Id
+    private int id;
+
+    @Column
     private String color;
 
-    public Carro(String name, int year, String licensePlate, String model, String color) {
-        this.name = name;
-        this.year = year;
-        this.licensePlate = licensePlate;
-        this.model = model;
+    @Column
+    private String licensePlate;
+
+    @Column
+    private String model;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
         this.color = color;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getYear() {
-        return year;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
     }
 
     public String getLicensePlate() {
@@ -47,11 +53,4 @@ public class Carro {
         this.model = model;
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
 }
