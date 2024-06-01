@@ -38,7 +38,7 @@ public class UsuarioController {
     public ResponseEntity<UsuarioDTO> updateUsuario(
             @RequestBody UsuarioDTO usuarioDTO,
             @PathVariable Long id
-            ) throws Exception {
+            ) {
         return new ResponseEntity<>(usuarioService.updateUsuario(id, usuarioDTO), HttpStatus.OK);
     }
 

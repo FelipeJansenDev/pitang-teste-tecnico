@@ -4,6 +4,7 @@ import com.pitang.testeTecnico.mapper.UsuarioMapper;
 import com.pitang.testeTecnico.model.Usuario;
 import com.pitang.testeTecnico.model.dto.UsuarioDTO;
 import com.pitang.testeTecnico.repository.UsuarioRepository;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -36,10 +37,10 @@ public class UsuarioService {
         usuarioRepository.deleteById(id);
     }
 
-    public UsuarioDTO updateUsuario(Long id, UsuarioDTO usuarioDTO) throws Exception {
+    public UsuarioDTO updateUsuario(Long id, UsuarioDTO usuarioDTO) {
 
         if (!usuarioRepository.existsById(id)) {
-            throw new Exception("Não encontrado", null);
+            throw new EmptyResultDataAccessException(Math.toIntExact(id));
         }
         usuarioDTO.setId(id);
         Usuario usuario = usuarioMapper.toEntity(usuarioDTO);
