@@ -87,6 +87,11 @@ public class UsuarioDTO {
         this.phone = phone;
     }
 
+    public Set<CarroDTO> getCars() {
+        return cars;
+    }
 
-
+    public void setCars(Set<CarroDTO> cars) {
+        this.cars = cars;
+    }
 }
