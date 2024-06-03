@@ -64,10 +64,9 @@ public class CarroService {
             Carro carroUpdated = carroMapper.toEntity(carroDTO);
 
             if (!Objects.equals(carroUpdated.getLicensePlate(), carro.getLicensePlate())
-                    && carroRepository.existsByLicensePlate(carroUpdated.getLicensePlate())) {
+                    && carroRepository.existsByLicensePlate(carroDTO.getLicensePlate())) {
                 throw new LicensePlateExistenteException();
             }
-
             carro = carroRepository.save(carroUpdated);
         }
         return carroMapper.toDto(carro);

@@ -1,0 +1,6 @@
+version: '2'
+services:
+  application:
+    image: felipejansen/teste-tecnico-pitang:1.0.1
+    ports:
+      - "8081:8081"
