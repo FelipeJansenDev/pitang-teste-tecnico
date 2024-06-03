@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Set;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/cars")
 public class CarroController {
@@ -34,7 +35,7 @@ public class CarroController {
     @GetMapping("/{id}")
     public ResponseEntity<CarroDTO> getCarro(@PathVariable Long id)  {
         CarroDTO carroDTO = carroService.getCarro(id);
-        return new ResponseEntity<>(carroDTO, carroDTO == null ? HttpStatus.NOT_FOUND : HttpStatus.FOUND);
+        return new ResponseEntity<>(carroDTO, carroDTO.getId() == null ? HttpStatus.NO_CONTENT : HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")
