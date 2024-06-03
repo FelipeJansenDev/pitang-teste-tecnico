@@ -1,7 +1,5 @@
 package com.pitang.testeTecnico.controller;
 
-import com.pitang.testeTecnico.model.dto.LoginResponseDto;
-import com.pitang.testeTecnico.model.dto.LoginUserDTO;
 import com.pitang.testeTecnico.model.dto.UsuarioDTO;
 import com.pitang.testeTecnico.service.UsuarioService;
 import jakarta.validation.Valid;
