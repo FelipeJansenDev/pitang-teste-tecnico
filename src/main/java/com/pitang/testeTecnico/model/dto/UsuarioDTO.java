@@ -20,7 +20,7 @@ public class UsuarioDTO {
     private String password;
     private String phone;
     private String email;
-    private Set<Carro> cars = new HashSet<>();
+    private Set<CarroDTO> cars = new HashSet<>();
 
     public String getEmail() {
         return email;
@@ -87,11 +87,6 @@ public class UsuarioDTO {
         this.phone = phone;
     }
 
-    public Set<Carro> getCars() {
-        return cars;
-    }
 
-    public void setCars(Set<Carro> cars) {
-        this.cars = cars;
-    }
+
 }
