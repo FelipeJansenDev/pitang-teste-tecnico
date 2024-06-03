@@ -42,6 +42,13 @@ Existem 2 maneiras que você pode executar este projeto.
 ```
 mvn spring-boot:run
 ```
+
+Caso você não tenha o maven configurado na sua máquina, pode utilizar o comando abaixo
+
+```
+./mvnw spring-boot:run
+```
+
 ---
 
 2º Modo de executar) Através da imagem docker. Na pasta devops (https://github.com/FelipeJansenDev/pitang-teste-tecnico/tree/develop/devops),
