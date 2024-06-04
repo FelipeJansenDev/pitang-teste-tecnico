@@ -1,5 +1,60 @@
 ## Estórias de Usuário
 
+**EST-001** - Implementação retorno de usuários
+
+Como **USUÁRIO**\
+Eu quero **RETORNAR UMA LISTA DE USUÁRIOS** \
+Para **TER VISIBILIDADE DE QUAIS USUÁRIOS ESTÃO CADASTRADOS NO SISTEMA**
+
+---
+
+**FEAT-002** - Configuração sequenciador de ID  
+
+Foram adicionados incrementos automáticos na geração dos IDs
+de Usuário e Carro.
+
+---
+
+**EST-003** - Implementação CRUD de usuários
+
+Como **USUÁRIO**\
+Eu quero **TER CONTROLE SOBRE A MANIPULAÇÃO DAS INFORMAÇÕES DO USUÁRIO** \
+Para **INSERIR E DELETAR REGISTROS**
+
+---
+
+**EST-004** - Implementação UPDATE de usuários
+
+Como **USUÁRIO**\
+Eu quero **TER CONTROLE SOBRE A MANIPULAÇÃO DAS INFORMAÇÕES DO USUÁRIO** \
+Para **ALTERAR REGISTROS DE USUÁRIO**
+
+---
+
+**EST-005** - Implementação exceptionHandler
+
+Como **USUÁRIO**\
+Eu quero **TER UMA CLARA VISIBILIDADE SOBRE OS ERROS QUE OCORREM DENTRO DO SISTEMA** \
+Para **FACILITAR A ANÁLISE E DESCOBRIR SE É UM ERRO NA INSERÇÃO DE DADOS OU ERRO INTERNO DO SISTEMA**
+
+---
+
+**EST-006** - Implementação validação de E-mail já existente
+
+Como **USUÁRIO**\
+Eu quero **QUE MEU E-MAIL SEJA ÚNICO DENTRO DO SISTEMA** \
+Para **GARANTIR QUE NÃO TERÁ UM USUÁRIO DUPLICADO**
+
+---
+
+**EST-007** - Implementação validação de dados
+
+Como **USUÁRIO**\
+Eu quero **UMA VALIDAÇÃO DE DADOS INSERIDOS** \
+Para **GARANTIR QUE TEM NENHUM DADO FALTANDO, INCOMPLETO OU VAZIO**
+
+---
+
 **EST-008** - Implementação segurança
 
 Como **USUÁRIO**\
