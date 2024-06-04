@@ -2,7 +2,8 @@ package com.pitang.testeTecnico.config;
 
 import com.pitang.testeTecnico.model.Usuario;
 import com.pitang.testeTecnico.repository.UsuarioRepository;
-import jakarta.servlet.*;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
