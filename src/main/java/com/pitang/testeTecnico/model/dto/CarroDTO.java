@@ -1,11 +1,17 @@
 package com.pitang.testeTecnico.model.dto;
 
+import jakarta.validation.constraints.NotNull;
+
 public class CarroDTO {
 
     private Long id;
+    @NotNull
     private String color;
+    @NotNull
     private String licensePlate;
+    @NotNull
     private String model;
+    @NotNull
     private Integer year;
     private Long userId;
 
