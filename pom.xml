@@ -26,8 +26,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-			<optional>true</optional>
 		</dependency>
 
 		<dependency>
@@ -116,7 +114,7 @@
 				<version>3.4.1</version>
 				<configuration>
 					<to>
-						<image>felipejansen/teste-tecnico-pitang:1.0.3</image>
+						<image>felipejansen/teste-tecnico-pitang:1.0.4</image>
 					</to>
 				</configuration>
 			</plugin>
